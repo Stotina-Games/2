@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bh16j3x3wwj3c"]
+
+[ext_resource type="PackedScene" uid="uid://bn222wsf6nsp" path="res://elements/parallax_background.tscn" id="1_16flf"]
+[ext_resource type="PackedScene" uid="uid://duwivojshs7fb" path="res://elements/player.tscn" id="2_7q3li"]
+[ext_resource type="PackedScene" uid="uid://bhcspll354wgx" path="res://elements/kill_zone.tscn" id="3_ckcmr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rym7h"]
+size = Vector2(378, 67)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvbfy"]
+size = Vector2(373.75, 34.5)
+
+[node name="Game" type="Node2D"]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_16flf")]
+scale = Vector2(0.6, 0.6)
+transform = Transform2D(0.6, 0, 0, 0.6, 0, 0)
+
+[node name="borders" type="Node2D" parent="."]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="borders/StaticBody2D2"]
+position = Vector2(189, -34)
+shape = SubResource("RectangleShape2D_rym7h")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="borders/StaticBody2D"]
+position = Vector2(184.5, 681.5)
+shape = SubResource("RectangleShape2D_rym7h")
+
+[node name="Player" parent="." instance=ExtResource("2_7q3li")]
+position = Vector2(122, 324)
+
+[node name="kill_zone" parent="." instance=ExtResource("3_ckcmr")]
+position = Vector2(181, 626)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone"]
+position = Vector2(5.875, 3.75)
+shape = SubResource("RectangleShape2D_kvbfy")
