@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvdjtgv8l3nk4"
+path="res://.godot/imported/hiding-place-in-the-forest-111724 - Music by Geoff Harvey from Pixabay.mp3-a52c1d51e4bed6af37f9995c87984688.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/hiding-place-in-the-forest-111724 - Music by Geoff Harvey from Pixabay.mp3"
+dest_files=["res://.godot/imported/hiding-place-in-the-forest-111724 - Music by Geoff Harvey from Pixabay.mp3-a52c1d51e4bed6af37f9995c87984688.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=5.0
+bpm=0
+beat_count=0
+bar_beats=4

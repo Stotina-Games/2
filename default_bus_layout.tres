@@ -1,0 +1,16 @@
+[gd_resource type="AudioBusLayout" format=3 uid="uid://jasft7f7st2v"]
+
+[resource]
+bus/0/volume_db = 1.65377
+bus/1/name = &"Player_Sounds"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 1.45601
+bus/1/send = &"Master"
+bus/2/name = &"Background_Music"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = -20.3764
+bus/2/send = &"Master"
